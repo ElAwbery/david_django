@@ -1,0 +1,131 @@
+body {
+    background-color: #fffff8;
+  }
+  
+  /* sets the default for all html elements to include padding and margin in their total width and height */
+  * {
+    box-sizing: border-box;
+  }
+  
+  div.container {
+    max-width: 940px;
+  }
+  
+  .col-md-8 {
+    max-width: 90%;
+    align-content: center;
+    padding: 0;
+    float: left;
+  }
+  
+  div.col-md-4 {
+    padding: 30px;
+  }
+  
+  .card {
+    height: 100%;
+  }
+  
+  .btn-primary {
+    color: #111; 
+    background-color: #fffff8;
+    border-color: grey;
+    box-shadow: none;
+    background-image: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: white;
+    color: #111;
+    border-color: #b30000;
+    box-shadow: none;
+    background-image: none;
+  }
+  
+  .form-group input:hover, .form-group textarea:hover {
+    border-color: #b30000;
+  }
+  
+  h1 {
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 4.5rem;
+      margin-top: 100px;
+      margin-bottom: 30px;
+  }
+  
+  h2 {
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+      margin-top: 68px;
+      margin-bottom: 18px;
+      font-size: 3.5rem;
+    }
+  
+  h3 {
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 2.0rem;
+    }
+    
+  h5 {
+      font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+      font-size: 1.0rem;
+      font-style: italic;
+      margin-top: 10px;
+  }
+  
+  p {
+        font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+        white-space: pre-line;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+  
+  pre {
+    font-size: 1rem;
+  }
+  /* nav is the grey background, across the widest pageview*/
+  /* a is in a div container which you can manipulate separately to the nav */
+  
+  .navbar a {
+      font-family: "Source Sans Pro", sans-serif;
+      padding:0;
+      width:100%;
+      justify-content: space-around;
+    }
+  
+  button.navbar-toggler {
+    border: 0;
+  }
+  
+  h1 a, h2 a, h3 a, h5 a, p a {
+    text-decoration: none;
+    color: #111;
+  }
+  
+  h3 a:after, h5 a:after, p a:after {
+    content: " 🔗";
+    font-size: 50%;
+    vertical-align: super;
+  }
+  
+  h3 a:visited, h2 a:visited, h5 a:visited, p a:visited {
+    text-decoration: none;
+    color:  #595959;
+  }
+  
+  .navbar-light a.navbar-brand:hover, a:hover, p a:hover, a:visited:hover {
+    color: #b30000;
+    text-decoration: none;
+  }
+  
+  small a {
+    color: #595959;;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* a:hover must come after a:link and a:visited
+  a:active must come after a:hover */
+  
+  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <!-- deployment css ref:  href="https://static.charlidemo.com/demoapp/main.css" -->
+    <link rel="stylesheet" type="text/css" href="{% static "/demoapp/main.css"  %}">
+    <!-- html header title - doesn't show in the view -->
+    <title>Demonstration App</title>
+</head>
+<body>
+<div class="container">
+
+<h1 style = "text-align:center;">David's Furries</h1>
+<p style = "text-align:center;">
+    This is working. HTML go 
+    
+    <br>
+    <br>
+    <br> 
+    From our database table we have:
+</p>
+    {% for object in data %}
+    <p style = "text-align:center;"> 
+
+        Name: {{ object.Name }}
+        <br>
+        ID: {{object.ID}}
+        <br>
+        Role: {{object.Role}}
+        <br>
+        Note: {{object.Note}}
+    </p>
+    <p style = "text-align:center;">
+        <img src="{% static object.Image %}">
+    </p>
+    {% endfor %}
+
+</div>
